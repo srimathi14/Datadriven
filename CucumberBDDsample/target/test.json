@@ -1,0 +1,397 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Launch Application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3500000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user launches the application \"https://demoqa.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://demoqa.com/",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefinitionfile.Bookstorefeaturesteps.launchApplication(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-08T15:58:22.415Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4806000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Core.Hooks.intialize()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Verifying New user login functionality",
+        "description": "",
+        "id": "verifying-bookstore-functionality;verifying-new-user-login-functionality;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1161000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Core.Hooks.Quit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 285000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicked on bookStore page",
+            "match": {
+              "location": "stepdefinitionfile.Bookstorefeaturesteps.bookstorepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cspan class\u003d\"text\"\u003e...\u003c/span\u003e is not clickable at point (86, 413). Other element would receive the click: \u003cdiv class\u003d\"header-text\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d99.0.4844.51)\nBuild info: version: \u00274.1.2\u0027, revision: \u00279a5a329c5a\u0027\nSystem info: host: \u0027DESKTOP-047GC6K\u0027, ip: \u0027192.168.0.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_191\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [37406d2967b1180942877d0d8a70bd19, clickElement {id\u003d9788ddf1-cddc-4a60-9efc-98b86b118fd3}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\\Users\\gajen\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61582}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61582/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (37406d2967b1180942877d0d8a70bd19)] -\u003e xpath: //span[text()\u003d\u0027Login\u0027]]\nSession ID: 37406d2967b1180942877d0d8a70bd19\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)\r\n\tat pages.Bookstorepage.loginnew(Bookstorepage.java:34)\r\n\tat stepdefinitionfile.Bookstorefeaturesteps.loginbutton(Bookstorefeaturesteps.java:24)\r\n\tat ✽.user clicked on loginbutton(file:///C:/Users/gajen/TrainingNew/CucumberBDDsample/src/test/java/Featurefiles/Bookstore.feature:8)\r\n",
+              "duration": 1196000000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user clicked on loginbutton",
+            "match": {
+              "location": "stepdefinitionfile.Bookstorefeaturesteps.loginbutton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user clicked the new user",
+            "match": {
+              "location": "stepdefinitionfile.Bookstorefeaturesteps.newuserregister()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user should be able to enter firstname1 \"selenium\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "selenium",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitionfile.Bookstorefeaturesteps.firstnametab(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user  should be able to enter lastname \"webdriver\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "webdriver",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinitionfile.Bookstorefeaturesteps.lastnametab(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user should be able to enter the username \"book\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "book",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitionfile.Bookstorefeaturesteps.username1(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user should be able to enter the password \"bookstore@1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "bookstore@1",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitionfile.Bookstorefeaturesteps.password1(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user checks the captcha image",
+            "match": {
+              "location": "stepdefinitionfile.Bookstorefeaturesteps.checkcapatcha()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user clicks the register button and it should be able to register",
+            "match": {
+              "location": "stepdefinitionfile.Bookstorefeaturesteps.registernew()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@bookstore"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Launch Application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3118000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user launches the application \"https://demoqa.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://demoqa.com/",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefinitionfile.Bookstorefeaturesteps.launchApplication(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-08T15:58:33.596Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2108000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Core.Hooks.intialize()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Verifying New user login functionality",
+        "description": "",
+        "id": "verifying-bookstore-functionality;verifying-new-user-login-functionality;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 943000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Core.Hooks.Quit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 164000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicked on bookStore page",
+            "match": {
+              "location": "stepdefinitionfile.Bookstorefeaturesteps.bookstorepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cspan class\u003d\"text\"\u003e...\u003c/span\u003e is not clickable at point (86, 567). Other element would receive the click: \u003cdiv id\u003d\"google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0__container__\" style\u003d\"border: 0pt none;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d99.0.4844.51)\nBuild info: version: \u00274.1.2\u0027, revision: \u00279a5a329c5a\u0027\nSystem info: host: \u0027DESKTOP-047GC6K\u0027, ip: \u0027192.168.0.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_191\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [18e72248a7a08c113302e073fb155e3d, clickElement {id\u003da0d195e8-09a9-4d76-b46a-71fd65414cc2}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\\Users\\gajen\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61642}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61642/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (18e72248a7a08c113302e073fb155e3d)] -\u003e xpath: //span[text()\u003d\u0027Login\u0027]]\nSession ID: 18e72248a7a08c113302e073fb155e3d\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)\r\n\tat pages.Bookstorepage.loginnew(Bookstorepage.java:34)\r\n\tat stepdefinitionfile.Bookstorefeaturesteps.loginbutton(Bookstorefeaturesteps.java:24)\r\n\tat ✽.user clicked on loginbutton(file:///C:/Users/gajen/TrainingNew/CucumberBDDsample/src/test/java/Featurefiles/Bookstore.feature:8)\r\n",
+              "duration": 1446000000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user clicked on loginbutton",
+            "match": {
+              "location": "stepdefinitionfile.Bookstorefeaturesteps.loginbutton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user clicked the new user",
+            "match": {
+              "location": "stepdefinitionfile.Bookstorefeaturesteps.newuserregister()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user should be able to enter firstname1 \"java\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "java",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitionfile.Bookstorefeaturesteps.firstnametab(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user  should be able to enter lastname \"python\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "python",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinitionfile.Bookstorefeaturesteps.lastnametab(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user should be able to enter the username \"cucumber\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cucumber",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitionfile.Bookstorefeaturesteps.username1(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user should be able to enter the password \"bdd\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "bdd",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitionfile.Bookstorefeaturesteps.password1(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user checks the captcha image",
+            "match": {
+              "location": "stepdefinitionfile.Bookstorefeaturesteps.checkcapatcha()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user clicks the register button and it should be able to register",
+            "match": {
+              "location": "stepdefinitionfile.Bookstorefeaturesteps.registernew()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@bookstore"
+          }
+        ]
+      }
+    ],
+    "name": "Verifying Bookstore functionality",
+    "description": "",
+    "id": "verifying-bookstore-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Featurefiles/Bookstore.feature",
+    "tags": []
+  }
+]
