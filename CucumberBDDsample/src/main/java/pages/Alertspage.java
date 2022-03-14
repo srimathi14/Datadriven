@@ -17,7 +17,8 @@ public class Alertspage {
     private String newmessage="//button[text()='New Window Message']";
     private String newWindowTextId = "sampleHeading";
     RemoteWebDriver driver = Hooks.driver;
-    public void alert() {
+   
+     public void alert() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
         // js.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath(alertclick)));
