@@ -14,6 +14,7 @@ public class Formfeaturesteps {
         commonMethods.launchUrl(url);
 
     }
+
     @When("^user clicked on Formspage$")
     public void formclick(){
 
